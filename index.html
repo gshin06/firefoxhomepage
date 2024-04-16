@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Landing Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="./dist/output.css" rel="stylesheet">
+
+        <style>
+            body{
+                background-color: #1e1e2e;
+            }
+        </style>
+    </head>
+
+    <body class="bg-center">
+        <!-- Picture -->
+        <div class="py-20 pb-10">
+            <img src="images/whitelotus.png" class="mx-auto h-80">
+        </div>
+
+       <!--Search Bar => Google -->
+        <div class="pb-20">
+            <input type="text" placeholder="Google search" id="search" name="search" onkeydown="if(event.keyCode == 13) {searchGoogle();}" class="border-2 block mx-auto align-middle h-10 w-60 p-3 mt-5 my-15 mb-20 m-3 border-15 border-sky-900 rounded-3xl text-center">
+        </div>  
+
+        <!--Dock with favorite websites-->
+        <div class="flex items-center justify-center">
+            <div class="grid grid-cols-3 md:flex md:flex-row bg-[#313244] mx-auto rounded-3xl px-4 py-2 mb-2">
+
+            <!--Youtube-->
+            <div><a href="https://www.youtube.com/"><img src="images/youtube.png" class="hover:bg-[#9399b2] hover:rounded-xl h-20 p-2 transform hover:h-21 hover:p-1 duration-150 active:bg-blue-800 active:rounded-lg"></a></div>
+
+            <!--Github-->
+            <div><a href="https://github.com/"><img src="images/github-logo-6532.png" class="hover:bg-[#330E6D] hover:rounded-xl h-20 p-2 transform hover:h-21 hover:w-21 hover:p-1 duration-150 active:bg-blue-800 active:rounded-lg"></a></div>
+            
+            <!--Reddit-->
+            <div><a href="https://www.reddit.com/"><img src="images/reddit-logo-2436.png" class="hover:bg-[#330E6D] hover:rounded-xl h-20 p-2 transform hover:h-21 hover:p-1 duration-150 active:bg-blue-800 active:rounded-lg" ></a></div>
+            
+            <!--Chatgpt Viewer-->
+            <div><a href="https://chat.openai.com/"><img src="images/chatgpt.png" class="hover:bg-[#330E6D] hover:rounded-xl h-20 p-2 transform hover:h-21 hover:p-1 duration-150 active:bg-blue-800 active:rounded-lg"></a></div>
+            </div>
+        </div>
+    
+   
+       </div>
+
+       <!--Scripts-->
+       <script src="scripts/search.js"></script>
+    </body>
+
+</html>
